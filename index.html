@@ -4,154 +4,147 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Harsh Gohil | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
     body {
+      margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #f4f6f8;
-      color: #1a1a1a;
+      background: #f0f2f5;
+      color: #333;
     }
-    .wrapper {
+    .container {
       display: flex;
-      flex-direction: column;
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 40px auto;
       background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+      border-radius: 16px;
       overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     }
-    @media(min-width: 768px) {
-      .wrapper {
-        flex-direction: row;
-      }
-    }
-    .left {
-      flex: 1;
-      background: #f1f3f5;
+    .sidebar {
+      background: #f8f9fa;
       padding: 40px 30px;
+      width: 300px;
       text-align: center;
     }
-    .left img {
+    .sidebar img {
       width: 180px;
       height: 180px;
-      object-fit: cover;
       border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 20px;
     }
-    .left h2 {
+    .sidebar h1 {
       font-size: 1.5rem;
-      font-weight: 700;
+      margin: 10px 0;
     }
-    .left p {
-      margin: 8px 0 20px;
+    .sidebar p {
+      font-size: 0.9rem;
       color: #555;
+      margin: 10px 0 20px;
     }
-    .left a {
+    .sidebar a {
       display: block;
-      margin-bottom: 8px;
-      color: #0073e6;
+      margin: 8px 0;
+      color: #007bff;
       text-decoration: none;
     }
-    .left .resume-btn {
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    .btn {
       display: inline-block;
-      margin-top: 16px;
-      background: #0073e6;
-      color: #fff;
+      margin-top: 15px;
+      background: #007bff;
+      color: white;
       padding: 10px 20px;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 600;
+      transition: background 0.3s;
     }
-    .right {
-      flex: 2;
+    .btn:hover {
+      background: #0056b3;
+    }
+    .content {
+      flex: 1;
       padding: 40px;
     }
-    h3 {
-      margin-top: 30px;
-      margin-bottom: 10px;
-      font-size: 1.3rem;
+    .section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 1.4rem;
       color: #222;
+      margin-bottom: 10px;
     }
     ul {
       padding-left: 20px;
-      margin-bottom: 20px;
     }
     li {
       margin-bottom: 6px;
     }
-    a {
-      color: #0056b3;
+    a.link {
+      color: #007bff;
       text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .project-title {
       font-weight: 600;
     }
-    .small {
-      font-size: 0.9rem;
-      color: #444;
+    a.link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="left">
-      <img src="profile.jpg" alt="Harsh Gohil">
-      <h2>Harsh Gohil</h2>
-      <p>Final-year Computer Engineering Student<br>LDCE, Ahmedabad (GTU)</p>
-      <a href="mailto:harshgohil.biz@gmail.com">📧 harshgohil.biz@gmail.com</a>
-      <a href="https://github.com/harshh999" target="_blank">💻 GitHub</a>
-      <a href="https://www.linkedin.com/in/harsh-gohil-42519034b/" target="_blank">💼 LinkedIn</a>
-      <a href="LDCE_HARSH_GOHIL_COMPUTER.pdf" class="resume-btn" download>📄 Download Resume</a>
+  <div class="container">
+    <div class="sidebar">
+      <img src="profile.jpg" alt="Harsh Gohil" />
+      <h1>Harsh Gohil</h1>
+      <p>Final-year Computer Engineering Student<br />LDCE, Ahmedabad (GTU)</p>
+      <a href="mailto:harshgohil.biz@gmail.com">harshgohil.biz@gmail.com</a>
+      <a href="https://github.com/harshh999" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/harsh-gohil-42519034b/" target="_blank">LinkedIn</a>
+      <a class="btn" href="LDCE_HARSH_GOHIL_COMPUTER.pdf" download>Download Resume</a>
     </div>
-    <div class="right">
-      <h3>📌 Experience & Internships</h3>
-      <ul>
-        <li><strong>Full Stack Developer Intern</strong> – Univativ (Dec 2024 – Apr 2025)</li>
-        <li><strong>Angular & .NET Intern</strong> – Tatvasoft (Jul 2025 – Aug 2025)</li>
-        <li><strong>Graphics & Social Media</strong> – Weblogy Sphere Pvt. Ltd.</li>
-        <li><strong>Digital Signature Operator</strong> – BIS, Govt. of India</li>
-      </ul>
-
-      <h3>🧠 Tech Stack</h3>
-      <ul>
-        <li><strong>Languages:</strong> Java · Python · JavaScript</li>
-        <li><strong>Frontend:</strong> Angular · React · Vue.js · TailwindCSS · Astro</li>
-        <li><strong>Backend:</strong> Node.js · .NET Core · Flask</li>
-        <li><strong>Databases:</strong> MySQL · PostgreSQL · ScyllaDB</li>
-        <li><strong>DevOps / Cloud:</strong> GitHub Actions · Docker · AWS · Azure</li>
-        <li><strong>Other Tools:</strong> Git · Postman</li>
-      </ul>
-
-      <h3>🚀 Projects</h3>
-      <ul>
-        <li><span class="project-title">🖐️ <a href="https://github.com/harshh999/gesture-calculator">Gesture Calculator</a></span> – <span class="small">Real-time camera calculator with hand gestures</span></li>
-        <li><span class="project-title">🔗 <a href="https://github.com/harshh999/URL-Shortner">URL Shortener</a></span> – <span class="small">Simple app to shorten long URLs</span></li>
-        <li><span class="project-title">📄 <a href="https://github.com/harshh999/resume-builder">Resume Builder</a></span> – <span class="small">Create and download resumes in real-time</span></li>
-        <li><span class="project-title">⏱️ <a href="https://github.com/harshh999/Pomodoro-Clock">Pomodoro Clock</a></span> – <span class="small">Focus timer with 25/5 cycle</span> – <a href="https://pomodoro-timer-exclusive.netlify.app/">Live Demo</a></li>
-        <li><span class="project-title">🧠 <a href="https://github.com/harshh999/eli5-app">ELI5 App</a></span> – <span class="small">Explains any concept like you're 5</span></li>
-      </ul>
-
-      <h3>🏅 Certifications & Highlights</h3>
-      <ul>
-        <li>Full Stack Developer – OneRoadmap</li>
-        <li>JavaScript & Responsive Design – freeCodeCamp</li>
-        <li>AWS Architecture Simulation – Forage</li>
-        <li>GenAI-Powered Analytics – TCS Forage</li>
-        <li>5000+ Digital Signatures handled under BIS</li>
-      </ul>
-
-      <h3>📖 Currently Learning</h3>
-      <p class="small">System Design · Docker Compose · Terraform · LeetCode (daily)</p>
+    <div class="content">
+      <div class="section">
+        <h2>💼 Experience & Internships</h2>
+        <ul>
+          <li><strong>Full Stack Developer Intern</strong> – Univativ (Dec 2024 – Apr 2025)</li>
+          <li><strong>Angular & .NET Intern</strong> – Tatvasoft (Jul 2025 – Aug 2025)</li>
+          <li><strong>Graphics & Social Media</strong> – Weblogy Sphere Pvt. Ltd.</li>
+          <li><strong>Digital Signature Operator</strong> – BIS, Govt. of India</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>🛠️ Projects</h2>
+        <ul>
+          <li><a class="link" href="https://github.com/harshh999/gesture-calculator">Gesture Calculator</a> – Calculator using hand gestures</li>
+          <li><a class="link" href="https://github.com/harshh999/URL-Shortner">URL Shortener</a> – Shortens long URLs</li>
+          <li><a class="link" href="https://github.com/harshh999/resume-builder">Resume Builder</a> – Dynamic resume builder</li>
+          <li><a class="link" href="https://github.com/harshh999/Pomodoro-Clock">Pomodoro Clock</a> – Timer for work/breaks [<a class="link" href="https://pomodoro-timer-exclusive.netlify.app/">Live Demo</a>]</li>
+          <li><a class="link" href="https://github.com/harshh999/eli5-app">ELI5 App</a> – Explains complex topics simply</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>🧠 Tech Stack</h2>
+        <ul>
+          <li><strong>Languages:</strong> Java · Python · JavaScript</li>
+          <li><strong>Frontend:</strong> Angular · React · Vue.js · TailwindCSS · Astro</li>
+          <li><strong>Backend:</strong> Node.js · .NET Core · Flask</li>
+          <li><strong>Databases:</strong> MySQL · PostgreSQL · ScyllaDB</li>
+          <li><strong>DevOps / Cloud:</strong> GitHub Actions · Docker · AWS · Azure</li>
+          <li><strong>Other Tools:</strong> Git · Postman</li>
+        </ul>
+      </div>
     </div>
   </div>
+  <script>
+    document.querySelector('.btn').addEventListener('click', () => {
+      alert('Thanks for downloading my resume!');
+    });
+  </script>
 </body>
 </html>
